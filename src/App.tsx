@@ -1,4 +1,5 @@
 import Counter from "Counter";
+import CounterTwo from "CounterTwo";
 import ExampleProps from "exampleProps";
 import Hello from "hello";
 import React from "react";
@@ -11,7 +12,8 @@ class App extends React.Component {
                 <Hello name="해찬" />
                 <ExampleProps />
                 <ShowName name="yanghaechan" />
-                <Counter startNumber={5} />
+                {/* <Counter startNumber={5} /> */}
+                <CounterTwo />
             </div>
         );
     }
