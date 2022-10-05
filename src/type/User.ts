@@ -1,3 +1,5 @@
+import { Key } from "react";
+
 export interface IUser {
     id: Key | null | undefined;
     user: {
@@ -11,7 +13,7 @@ export interface IUser {
 }
 
 export interface IUserList {
-    users: IUser[];
+    users: string[];
     onRemove: Function;
     onToggle: Function;
 }

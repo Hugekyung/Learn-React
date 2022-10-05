@@ -31,7 +31,7 @@ function User({ user, onRemove, onToggle }: IUser) {
 function UserList({ users, onRemove, onToggle }: IUserList) {
     return (
         <div>
-            {users.map((user: IUser) => (
+            {users.map((user) => (
                 <User
                     user={user}
                     key={user.id}
