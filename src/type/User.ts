@@ -2,12 +2,7 @@ import { Key } from "react";
 
 export interface IUser {
     id: Key | null | undefined;
-    user: {
-        id: number;
-        email: string;
-        username: string;
-        active: string;
-    };
+    user: IUser2;
     onRemove: Function;
     onToggle: Function;
 }
