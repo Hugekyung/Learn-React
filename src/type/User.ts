@@ -12,8 +12,15 @@ export interface IUser {
     onToggle: Function;
 }
 
+export interface IUser2 {
+    id: number;
+    email: string;
+    username: string;
+    active: string;
+}
+
 export interface IUserList {
-    users: string[];
+    users: IUser2[];
     onRemove: Function;
     onToggle: Function;
 }

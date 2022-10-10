@@ -37,6 +37,7 @@ function UserList({ users, onRemove, onToggle }: IUserList) {
                     key={user.id}
                     onRemove={onRemove}
                     onToggle={onToggle}
+                    id={undefined}
                 />
             ))}
         </div>
