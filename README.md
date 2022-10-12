@@ -13,3 +13,30 @@ useEffect(function, deps)
 -   function : 실행하고자 하는 함수
 -   deps : 배열 형태. function을 실행시킬 조건.
 -   deps에 특정값을 넣게 되면 컴포넌트가 mount 될 때, 지정한 값이 업데이트될 때 useEffect를 실행합니다.
+
+-   사용 예시
+
+```js
+useEffect(() => {
+    console.log("렌더링 될때마다 실행");
+});
+
+useEffect(() => {
+    console.log("맨 처음 렌더링될 때 한 번만 실행");
+}, []);
+
+useEffect(() => {
+    console.log(name);
+    console.log("name이라는 값이 업데이트 될 때만 실행");
+}, [name]);
+
+const mounted = useRef(false);
+useEffect(() => {
+    if (!mounted.current) {
+        mounted.current = true;
+    } else {
+        console.log(name);
+        console.log("업데이트 될 때마다 실행");
+    }
+}, [name]);
+```
