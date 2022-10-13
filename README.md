@@ -13,6 +13,7 @@ useEffect(function, deps)
 -   function : 실행하고자 하는 함수
 -   deps : 배열 형태. function을 실행시킬 조건.
 -   deps에 특정값을 넣게 되면 컴포넌트가 mount 될 때, 지정한 값이 업데이트될 때 useEffect를 실행합니다.
+-   deps에 여러 값을 넣을 경우, 여러 값 중 하나라도 변경되는 경우에 렌더링이 새로 이루어지도록 할 수 있다.
 
 -   사용 예시
 
