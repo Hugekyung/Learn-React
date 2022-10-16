@@ -10,12 +10,12 @@ class App extends React.Component {
     public render() {
         return (
             <div>
-                <Hello name="해찬" />
+                {/* <Hello name="해찬" />
                 <ExampleProps />
-                <ShowName name="yanghaechan" />
+                <ShowName name="yanghaechan" /> */}
                 {/* <Counter startNumber={5} /> */}
-                <CounterTwo />
-                <InputSample />
+                {/* <CounterTwo />
+                <InputSample /> */}
             </div>
         );
     }
