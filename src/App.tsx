@@ -5,13 +5,13 @@ import Hello from "hello";
 import InputSample from "inputSample";
 import React from "react";
 import ShowName from "ShowName";
-import exampleUM from "./useUseMemo";
+import { ExampleUM } from "./useUseMemo";
 
 class App extends React.Component {
     public render() {
         return (
             <div>
-                <exampleUM />
+                <ExampleUM />
                 {/* <Hello name="해찬" />
                 <ExampleProps />
                 <ShowName name="yanghaechan" /> */}

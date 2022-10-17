@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useMemo, useState } from "react";
 
-const exampleUM = () => {
+export const ExampleUM = () => {
     const [number, setNumber] = useState(0);
     const [isKorea, setIsKorea] = useState(true);
 
@@ -31,4 +31,4 @@ const exampleUM = () => {
     );
 };
 
-export default exampleUM;
+// export default exampleUM;
